@@ -14,6 +14,7 @@ export async function getWeather(){
             weather:weather.list[i].weather[0].main
         })
     }
+    
     let tmpArray = [];
 
 function itemCheck(item) {

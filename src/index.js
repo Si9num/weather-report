@@ -16,7 +16,6 @@ setTimeout(()=>{
       </Provider>
     </React.StrictMode>
   );
-  
 },300)
 
 getWeather()

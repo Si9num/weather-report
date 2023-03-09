@@ -5,7 +5,6 @@ import { store } from "./store/store.js";
 import { getWeather } from './weather';
 import { useEffect } from 'react';
 function App() {
-
   return (
     
     <div className="app">
@@ -26,5 +25,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
