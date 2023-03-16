@@ -11,7 +11,7 @@ export async function getWeather(){
             temp: weather.list[i].main.temp,
             feels: weather.list[i].main.feels_like,
             humid: weather.list[i].main.humidity,
-            weather:weather.list[i].weather[0].main
+            weather:weather.list[i].weather[0].description
         })
     }
     
