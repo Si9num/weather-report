@@ -1,10 +1,11 @@
 
-export let weatherArr = [];
 
-export async function getWeather(){
-    let res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Minsk&appid=${process.env.REACT_APP_KEY}&units=metric`);
+
+export async function getWeather(city="Minsk"){
+    let weatherArr = [];
+    let res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${process.env.REACT_APP_KEY}&units=metric`);
     let weather = await res.json()
-
+    weatherArr.splice(0,weatherArr.length)
     for(let i = 0; i < weather.list.length; i++){
         weatherArr.push({
             date: weather.list[i].dt_txt.slice(0,10).split('-').reverse().join('.'),
@@ -16,7 +17,7 @@ export async function getWeather(){
     }
     
     let tmpArray = [];
-
+//console.log(city)
 function itemCheck(item) {
     if (tmpArray.indexOf(item.date) === -1) {
         tmpArray.push(item.date);
@@ -26,6 +27,7 @@ function itemCheck(item) {
 }
 
 weatherArr= weatherArr.filter((item) => itemCheck(item))
-      console.log(weatherArr);
+     // console.log(weatherArr);
     sessionStorage.setItem('weather',JSON.stringify(weatherArr))
+    
 }

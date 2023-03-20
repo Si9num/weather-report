@@ -5,6 +5,7 @@ import App from './App';
 import {getWeather} from './weather'
 import { Provider } from "react-redux";
 import { store } from './store/store';
+import { Search } from './search';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +13,7 @@ setTimeout(()=>{
   root.render(
     <React.StrictMode>
        <Provider store={store}>
+       
       <App />
       </Provider>
     </React.StrictMode>
