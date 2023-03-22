@@ -3,13 +3,13 @@ import { getWeather } from './weather';
 import { useState,useEffect } from 'react';
 
 export  function Search(){
-
+   
  
     let arr = [];
     for(let i = 0; i < list.length; i++){
-        if(list[i].country==="BY"){
+       // if(list[i].country==="BY"){
     arr.push(<option value={list[i].name} key={i} ></option>)
-        }
+       // }
     }
    
     return(

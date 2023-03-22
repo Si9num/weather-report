@@ -4,9 +4,12 @@ import { getWeather } from './weather';
 import { useState,useEffect } from 'react';
 import { Card } from './card';
 import { Search } from './search';
+import { Preloader } from './preloader';
+
 function App() {
   const [items, setItems] = useState(JSON.parse(sessionStorage.getItem('weather')))
   
+
   useEffect(()=>{
     
     document.querySelector('.searchBtn').onclick = async ()=>{
@@ -16,6 +19,8 @@ function App() {
   }) 
   return (
     
+    <div>
+      
     <div className="app">
       
       <Search />
@@ -39,7 +44,9 @@ function App() {
         <Card num='4' />
       </div>
     </div>
+    </div>
   );
+    
 }
 
 
