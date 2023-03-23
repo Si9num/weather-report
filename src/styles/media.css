@@ -1,0 +1,203 @@
+@media screen and (max-width: 1476px) {
+    .weatherIcon_card img {
+        object-fit: cover;
+        width: 6vw
+    }
+
+    .text_card {
+        width: 50%;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .weatherIcon_card {
+        font-size: 25px;
+    }
+
+    .searchBtn {
+
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .weatherIcon_card img {
+        object-fit: cover;
+        width: 6vw
+    }
+
+    .text_card {
+        width: 50%;
+        font-size: 36px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .weatherIcon_card {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .weatherIcon_card img {
+        object-fit: cover;
+        width: 6vw
+    }
+
+    .text_card {
+        width: 50%;
+        font-size: 36px;
+
+    }
+
+    .weatherIcon_card {
+        font-size: 20px;
+    }
+
+    .mainWin {
+        width: 60%;
+        height: 40vh;
+
+    }
+
+    .text {
+        width: 50%;
+        font-size: 30px
+    }
+
+    .weatherIcon {
+
+        font-size: 30px;
+
+    }
+
+    .searchBtn {
+
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .weatherIcon_card img {
+        object-fit: cover;
+        width: 6vw
+    }
+
+    .text_card {
+        width: 50%;
+        font-size: 33px;
+
+    }
+
+    .weatherIcon_card {
+        font-size: 20px;
+    }
+
+    .text_card p {
+        margin-bottom: 3%;
+    }
+
+
+    @media screen and (max-width: 845px) {
+
+        .text {
+            width: 50%;
+            font-size: 25px
+        }
+
+        .weatherIcon {
+
+            font-size: 25px;
+
+        }
+
+        .mainWin {
+            margin-top: 20%;
+            height: 30vh;
+
+        }
+
+
+        .text_card {
+            width: 50%;
+            font-size: 30px;
+
+        }
+
+        .weatherIcon_card {
+            font-size: 15px;
+        }
+
+        .text_card p {
+            margin-bottom: 7%;
+        }
+
+        .dayWin {
+            justify-content: space-around;
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+        .searchBtn {
+            width: 10vw;
+            font-size: 10px;
+        }
+
+        .mainWin {
+            margin-top: 40%;
+            height: 20vh;
+            width: 80vw;
+            margin-bottom: 20%;
+
+        }
+
+        .text {
+
+            font-size: 15px
+        }
+
+        .weatherIcon {
+
+            font-size: 15px;
+
+        }
+
+        .text_card {
+
+            font-size: 10px;
+
+        }
+
+        .weatherIcon_card {
+            font-size: 8px;
+        }
+
+        .text_card p {
+            margin-bottom: 7%;
+        }
+
+        .dayWin {
+            width: 40vw;
+        }
+
+        .search {
+            font-size: 10px;
+            width: 50vw;
+        }
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .dayWin:hover {
+        transition: 0.3s;
+        height: 30vh;
+
+    }
+}
